@@ -1,0 +1,4 @@
+<img [src]="(photo$ | async)?.download_url">
+<div class="button-wrapper">
+  <button mat-raised-button color="accent" (click)="remove()">Remove from favorites</button>
+</div>

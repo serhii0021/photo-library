@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  padding: 20px;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 80vh;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Route } from '@app/modules/core/enums/route.enum';
+import { SinglePhotoComponent } from '@app/modules/favorites/components/single-photo/single-photo.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,7 @@ const routes: Routes = [
         (m) => m.FavoritesModule
       ),
   },
+  { path: 'photos/:id', component: SinglePhotoComponent },
 ];
 
 @NgModule({
