@@ -1,0 +1,11 @@
+mat-toolbar {
+  justify-content: center;
+
+  a.active {
+    background-color: #2a3575;
+  }
+
+  a + a {
+    margin-left: 20px;
+  }
+}
