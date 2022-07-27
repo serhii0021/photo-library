@@ -4,6 +4,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@core/*": ["./src/app/modules/core/*"],
+      "@material/*": ["./src/app/modules/material/*"],
+      "@photos/*": ["./src/app/modules/photos/*"],
+      "@favorites/*": ["./src/app/modules/favorites/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
