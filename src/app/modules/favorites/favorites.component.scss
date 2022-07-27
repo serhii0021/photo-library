@@ -1,0 +1,12 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+
+  app-photo {
+    width: 300px;
+    height: 200px;
+  }
+}
