@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Route } from '@app/modules/core/enums/route.enum';
-import { SinglePhotoComponent } from '@app/modules/favorites/components/single-photo/single-photo.component';
+import { Route } from '@core/enums/route.enum';
+import { SinglePhotoComponent } from '@favorites/components/single-photo/single-photo.component';
 
 const routes: Routes = [
   {

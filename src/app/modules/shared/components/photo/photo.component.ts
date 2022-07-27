@@ -6,7 +6,7 @@ import {
   Input,
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { FavoritesService } from '@app/modules/core/services/favorites.service';
+import { FavoritesService } from '@core/services/favorites.service';
 import { PhotoType } from '@shared/models/photo-type.enum';
 import { Photo } from '@shared/models/photo.interface';
 
@@ -31,7 +31,7 @@ export class PhotoComponent {
   };
 
   @HostListener('click')
-  public onClick() {
+  public onClick(): void {
     this.clickHandlers[this.photoType]();
   }
 

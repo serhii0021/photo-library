@@ -1,5 +1,4 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   OnDestroy,
   OnInit,
@@ -17,13 +16,13 @@ import { Photo } from '@shared/models/photo.interface';
   selector: 'app-photos',
   templateUrl: './photos.component.html',
   styleUrls: ['./photos.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [PhotosService],
 })
 export class PhotosComponent implements OnInit, OnDestroy {
   public photos$!: Observable<Photo[]>;
   public loading$!: Observable<boolean>;
   public PhotoType = PhotoType;
+
   private destroy$ = new Subject<void>();
   private observer = new IntersectionObserver(
     ([entry]) => {

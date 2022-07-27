@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PhotoComponent } from './components/photo/photo.component';
+import { PhotoComponent } from '@shared/components/photo/photo.component';
 
 const COMPONENTS = [PhotoComponent];
 

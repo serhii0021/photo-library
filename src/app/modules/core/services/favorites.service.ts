@@ -7,7 +7,7 @@ import { Photo } from '@shared/models/photo.interface';
   providedIn: 'root',
 })
 export class FavoritesService implements OnDestroy {
-  private readonly storageKey = 'favorites';
+  readonly storageKey = 'favorites';
   private destroy$: Subject<void> = new Subject<void>();
   private favorites: Set<Photo> = new Set();
   private favorites$: BehaviorSubject<Photo[]> = new BehaviorSubject<Photo[]>(

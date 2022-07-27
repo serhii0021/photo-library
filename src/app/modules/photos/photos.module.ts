@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PhotosComponent } from './photos.component';
-import { SharedModule } from '@app/modules/shared/shared.module';
-import { MaterialModule } from '@app/modules/material/material.module';
-import { PhotosRoutingModule } from '@app/modules/photos/photos-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotosComponent } from '@photos/photos.component';
+import { SharedModule } from '@shared/shared.module';
+import { MaterialModule } from '@material/material.module';
+import { PhotosRoutingModule } from '@photos/photos-routing.module';
 
 @NgModule({
   declarations: [PhotosComponent],

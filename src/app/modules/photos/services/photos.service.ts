@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { concatMap, delay, scan, tap } from 'rxjs/operators';
 import { Photo } from '@shared/models/photo.interface';
 import { PhotoPagination } from '@photos/models/photo-pagination.interface';
 
 @Injectable()
 export class PhotosService {
-  private readonly baseUrl = 'https://picsum.photos';
+  readonly baseUrl = 'https://picsum.photos';
   private pagination$ = new BehaviorSubject<PhotoPagination>({
     page: 1,
     limit: 30,

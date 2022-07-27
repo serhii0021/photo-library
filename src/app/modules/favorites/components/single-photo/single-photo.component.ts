@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Observable, EMPTY } from 'rxjs';
 import { switchMap, take } from 'rxjs/operators';
@@ -11,7 +11,6 @@ import { Photo } from '@shared/models/photo.interface';
   selector: 'app-single-photo',
   templateUrl: './single-photo.component.html',
   styleUrls: ['./single-photo.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [PhotosService],
 })
 export class SinglePhotoComponent implements OnInit {

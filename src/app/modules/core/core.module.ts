@@ -1,8 +1,8 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '@app/modules/material/material.module';
+import { HeaderComponent } from '@core/components/header/header.component';
+import { MaterialModule } from '@material/material.module';
 
 @NgModule({
   declarations: [HeaderComponent],

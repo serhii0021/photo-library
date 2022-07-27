@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FavoritesService } from '@core/services/favorites.service';
 import { Photo } from '@shared/models/photo.interface';
@@ -8,7 +8,6 @@ import { PhotoType } from '@shared/models/photo-type.enum';
   selector: 'app-favorites',
   templateUrl: './favorites.component.html',
   styleUrls: ['./favorites.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FavoritesComponent implements OnInit {
   public favorites$!: Observable<Photo[]>;

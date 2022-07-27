@@ -1,5 +1,8 @@
 <div class="photos-wrapper">
-  <app-photo *ngFor="let photo of photos$ | async; trackBy:identify" [photo]="photo" [photoType]="PhotoType.List"></app-photo>
+  <app-photo *ngFor="let photo of photos$ | async; trackBy:identify"
+             [photo]="photo"
+             [photoType]="PhotoType.List">
+  </app-photo>
 </div>
 <div class="spinner-wrapper" *ngIf="loading$ | async">
   <mat-spinner></mat-spinner>
