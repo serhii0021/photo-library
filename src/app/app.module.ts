@@ -6,6 +6,7 @@ import { MaterialModule } from '@material/material.module';
 import { PhotosModule } from '@photos/photos.module';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { AppComponent } from '@app/app.component';
     AppRoutingModule,
     CoreModule,
     MaterialModule,
+    SharedModule,
     PhotosModule,
   ],
   providers: [],

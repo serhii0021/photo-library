@@ -9,7 +9,8 @@
       "@core/*": ["./src/app/modules/core/*"],
       "@material/*": ["./src/app/modules/material/*"],
       "@photos/*": ["./src/app/modules/photos/*"],
-      "@favorites/*": ["./src/app/modules/favorites/*"]
+      "@favorites/*": ["./src/app/modules/favorites/*"],
+      "@shared/*": ["./src/app/modules/shared/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
